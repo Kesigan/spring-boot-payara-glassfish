@@ -93,12 +93,12 @@
         <artifactId>spring-batch-test</artifactId>
         <scope>import</scope>
     </dependency>
-<dependency>
+<!-- <dependency>
     <groupId>fish.payara.extras</groupId>
     <artifactId>payara-micro</artifactId>
     <version>5.201</version>
     <type>jar</type>
-</dependency>
+</dependency> -->
 <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

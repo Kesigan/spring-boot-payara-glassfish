@@ -1,5 +1,3 @@
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-ARG JAR_FILE=target/*.war
-COPY ${JAR_FILE} app.war
-ENTRYPOINT ["java","-jar","/app.war"]
+FROM payara/micro:5-SNAPSHOT
+COPY ./target/*.war $DEPLOY_DIR
+EXPOSE 8082
