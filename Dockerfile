@@ -1,3 +1,3 @@
-FROM payara/micro:5-SNAPSHOT
-COPY ./target/*.war $DEPLOY_DIR
-EXPOSE 8082
+FROM payara/server-full
+COPY target/gs-spring-boot-docker-0.1.0.war $DEPLOY_DIR
+EXPOSE 8080
